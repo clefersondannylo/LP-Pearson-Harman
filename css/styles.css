@@ -1,0 +1,136 @@
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --main-color: #d92123;
+    --primary-text-color: #fff;
+    --secondary-text-color: #191919;
+    --secondary-color: #868686;
+    --tertiary-color: #eff3f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    /* background: var(--gray-900); */
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+i {
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    font-size: 4.0rem;
+    padding: 3.2rem;
+}
+
+#header {
+    min-height: 90vh;
+    background-image: url('../img/main_banner4.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    margin-bottom: 3.2rem
+}
+
+#inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand {
+    background: var(--main-color);
+    padding: 1.6rem;
+}
+
+#navbar {
+    display: flex;
+    gap: 3.2rem;
+    margin-right: 3.2rem;
+    text-transform: uppercase;
+}
+
+#navbar a {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    padding: 1.6rem;
+}
+
+.banner.active {
+    opacity: 1;
+}
+
+.banner {
+    max-width: 50%;
+    padding: 4rem;
+    opacity: 0;
+    position: absolute;
+    transition: .6s;
+}
+
+.banner h2 {
+    font-size: 6.4rem;
+    margin-bottom: 1.92rem;
+    position: relative;
+    z-index: 2;
+}
+
+.banner p {
+    font-size: 2.4rem;
+}
+
+.square {
+    display: block; 
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 40px;
+}
+
+.dots {
+    display: flex;
+    gap: 3.2rem;
+    position: absolute;
+    bottom: 4.8rem;
+    left: 4.8rem;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.dot.active {
+    background-color: var(--main-color);
+}
